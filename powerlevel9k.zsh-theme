@@ -739,7 +739,7 @@ prompt_dir() {
   elif [[ $(print -P "%~") == '~'* ]]; then
     current_state="HOME_SUBFOLDER"
   fi
-  "$1_prompt_segment" "$0_${current_state}" "$2" "blue" "$DEFAULT_COLOR" "${current_path}" "${dir_states[$current_state]}"
+  "$1_prompt_segment" "$0_${current_state}" "$2" "cyan" "$DEFAULT_COLOR" "${current_path}" "${dir_states[$current_state]}"
 }
 
 # Docker machine
